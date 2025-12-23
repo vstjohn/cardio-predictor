@@ -118,9 +118,16 @@ The React app will run on `http://localhost:5173`
 5. Click "Get Prediction" to see your risk assessment
 
 ## Project Structure
-
 ```
 cardio-predictor/
+├── notebooks/
+│   ├── phase1.py                 # Data loading and exploration
+│   ├── Phase2.ipynb              # Rule-based baseline
+│   ├── phase3_overfit.ipynb      # Overfitting experiments
+│   ├── Phase4_ModelSelection.ipynb    # Architecture comparison
+│   ├── Phase5_FeatureImportanceTS.ipynb # Feature analysis
+│   └── Phase6TS.ipynb            # Final model training
+│
 ├── backend/
 │   ├── app.py                    # Flask API server
 │   ├── cardio_model.keras        # Trained neural network model
